@@ -110,7 +110,7 @@ const StyledProject = styled.div`
     position: relative;
     z-index: 2;
     padding: 25px;
-    border-radius: var(--border-radius);
+    border-radius: none;
     background-color: white;
     color: black;
     font-size: var(--fz-lg);
@@ -141,7 +141,7 @@ const StyledProject = styled.div`
 
     li {
       margin: 0 20px 5px 0;
-      color: white;
+      color: black;
       font-size: var(--fz-xs);
       white-space: nowrap;
     }
@@ -230,7 +230,7 @@ const StyledProject = styled.div`
     }
 
     .img {
-      border-radius: var(--border-radius);
+      border-radius: none;
       mix-blend-mode: multiply;
       filter: grayscale(100%) contrast(1) brightness(90%);
 

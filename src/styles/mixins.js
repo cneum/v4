@@ -3,7 +3,6 @@ import { css } from 'styled-components';
 const button = css`
   color: black;
   background-color: transparent;
-  background-color: transparent;
   border: 1px solid black;
   padding: 0.8rem 1rem;
   font-size: var(--fz-sm);
@@ -90,9 +89,8 @@ const mixins = {
   button,
 
   smallButton: css`
-    color: black;
-    background-color: transparent;
-    border: 1px solid black;
+    color: white;
+    background-color: var(--red);
     padding: 0.5rem 0.7rem;
     font-size: var(--fz-xs);
     font-family: Times New Roman;
@@ -100,8 +98,14 @@ const mixins = {
     text-decoration: none;
     cursor: pointer;
     transition: var(--transition);
-    &:hover,
-    &:focus,
+    &:hover {
+      color: black;
+      border: 1px solid black;
+    }
+    &:focus {
+      color: black;
+      border: 1px solid black;
+    }
     &:active {
       background-color: var(--red);
     }
@@ -111,9 +115,8 @@ const mixins = {
   `,
 
   bigButton: css`
-    color: black;
-    background-color: transparent;
-    border: 1px solid black;
+    color: white;
+    background-color: var(--red);
     padding: 0.8rem 1rem;
     font-size: var(--fz-sm);
     font-family: times new roman;
@@ -121,7 +124,10 @@ const mixins = {
     text-decoration: none;
     cursor: pointer;
     transition: var(--transition);
-    &:hover,
+    &:hover {
+      color: black;
+      border: 1px solid black;
+    }
     &:focus,
     &:active {
       background-color: var(--red);
