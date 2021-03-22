@@ -90,8 +90,7 @@ const GlobalStyle = createGlobalStyle`
   }  
 
   :focus {
-    outline: 2px dashed var(--green);
-    outline-offset: 3px;
+
   }
   .bar {
     background-color: var(--thumb);
