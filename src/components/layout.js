@@ -118,6 +118,7 @@ Layout.propTypes = {
   children: PropTypes.node.isRequired,
   location: PropTypes.object.isRequired,
 };
+export default Layout;
 const doc = document.documentElement || document.body;
 let max = 0;
 let current = 0;
@@ -130,4 +131,3 @@ function updateScrollProgress() {
 
 document.addEventListener('scroll', updateScrollProgress);
 document.addEventListener('resize', updateScrollProgress);
-export default Layout;
