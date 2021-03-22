@@ -89,6 +89,18 @@ const GlobalStyle = createGlobalStyle`
     width: 100%;
   }  
 
+  :focus {
+    outline: 2px dashed var(--green);
+    outline-offset: 3px;
+  }
+  .bar {
+    background-color: var(--thumb);
+    height: 100%;
+    transform-origin: 0 0;
+    transform: scaleY(var(--progress));
+    width: 100%;
+  }  
+
   body {
 
     margin: 0;

@@ -3,7 +3,7 @@ const config = require('./src/config');
 module.exports = {
   siteMetadata: {
     title: 'Celine F. Nicolas',
-    description: 'A passionate problem solver... and everything in between.',
+    description: 'Celine F. Nicolas likes to solve problems.',
     siteUrl: 'https://celinenicolas.com', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '@celinefelisa',

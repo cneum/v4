@@ -89,8 +89,9 @@ const mixins = {
   button,
 
   smallButton: css`
-    color: white;
-    background-color: var(--red);
+    color: black;
+    background-color: transparent;
+    border: 1px solid black;
     padding: 0.5rem 0.7rem;
     font-size: var(--fz-xs);
     font-family: Times New Roman;
@@ -115,8 +116,9 @@ const mixins = {
   `,
 
   bigButton: css`
-    color: white;
-    background-color: var(--red);
+    color: black;
+    background-color: transparent;
+    border: 1px solid black;
     padding: 0.8rem 1rem;
     font-size: var(--fz-sm);
     font-family: times new roman;
@@ -163,6 +165,12 @@ const mixins = {
         color: var(--red);
       }
     }
+  `,
+
+  resetList: css`
+    list-style: none;
+    padding: 0;
+    margin: 0;
   `,
 };
 
