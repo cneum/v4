@@ -79,5 +79,8 @@ jobs.js
 contact.js
     -line 49 made what's next subsection header title match 1,2,3
           <h2 className="numbered-heading overline">What’s Next?</h2> [remove overline]
-    
+
+
+https://jonas-kgomo.github.io/
+    blog section!
 
