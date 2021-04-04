@@ -16,7 +16,7 @@ const StyledContactSection = styled.section`
     display: block;
     margin-bottom: 20px;
     color: var(--green);
-    font-family: var(--font-mono);
+    font-family: Times New Roman;
     font-size: var(--fz-md);
     font-weight: 400;
 

@@ -17,6 +17,7 @@ const StyledProjectsSection = styled.section`
 
   .archive-link {
     font-size: var(--fz-sm);
+    padding: 10px 0px;
     &:after {
       bottom: 0.1em;
     }
@@ -87,7 +88,6 @@ const StyledProject = styled.li`
       display: flex;
       align-items: center;
       margin-right: -10px;
-      color: black;
 
       a {
         ${({ theme }) => theme.mixins.flexCenter};
@@ -206,10 +206,6 @@ const Projects = () => {
     <StyledProjectsSection>
       <h2 ref={revealTitle}>Other Noteworthy Projects</h2>
 
-      <Link className="inline-link archive-link" to="/archive" ref={revealArchiveLink}>
-        view the archive
-      </Link>
-
       <ul className="projects-grid">
         <TransitionGroup component={null}>
           {projectsToShow &&
@@ -279,6 +275,9 @@ const Projects = () => {
       <button className="more-button" onClick={() => setShowMore(!showMore)}>
         Show {showMore ? 'Less' : 'More'}
       </button>
+      <Link className="inline-link archive-link" to="/archive" ref={revealArchiveLink}>
+        view the archive
+      </Link>
     </StyledProjectsSection>
   );
 };

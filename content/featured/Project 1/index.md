@@ -1,14 +1,13 @@
 ---
-date: 'YYYY-MM-DD'
-title: 'Title'
+date: '2011'
+title: 'Autumn cucurbitaceae'
 cover: './featured1.png'
-github: 'https://github.com/cneum'
 external: 'https://'
 tech:
-  - Item 1
-  - Item 2
-  - Item 3
+  - Charcoal
+  - Hard Pastels
+  - Mixed Paper
 showInProjects: true
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum purus sit amet ex varius, eget ornare purus finibus. Duis convallis semper est, at pulvinar augue lobortis.
+Still life drawing of of gourds, squash, and pumpkins.

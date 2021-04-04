@@ -208,6 +208,7 @@ const StyledProject = styled.li`
       svg {
         width: 20px;
         height: 20px;
+        color: var(--dark-greige);
       }
     }
   }
@@ -262,7 +263,7 @@ const StyledProject = styled.li`
     .img {
       border-radius: none;
       mix-blend-mode: multiply;
-      filter: grayscale(100%) contrast(1) brightness(90%);
+      filter: none;
 
       @media (max-width: 768px) {
         object-fit: cover;
@@ -328,7 +329,7 @@ const Featured = () => {
               <StyledProject key={i} ref={el => (revealProjects.current[i] = el)}>
                 <div className="project-content">
                   <div>
-                    <p className="project-overline">Featured Project</p>
+                    <p className="project-overline">Featured Artwork</p>
 
                     <h3 className="project-title">
                       <a href={external}>{title}</a>

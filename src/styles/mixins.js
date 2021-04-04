@@ -59,7 +59,7 @@ const mixins = {
     position: relative;
     transition: var(--transition);
     cursor: pointer;
-    color: black;
+    color: inherit;
     &:hover,
     &:focus,
     &:active {
@@ -102,13 +102,13 @@ const mixins = {
     &:hover {
       color: black;
       border: 1px solid black;
+      background-color: var(--red);
     }
     &:focus {
       color: black;
       border: 1px solid black;
     }
     &:active {
-      background-color: var(--red);
     }
     &:after {
       display: none !important;
@@ -129,10 +129,10 @@ const mixins = {
     &:hover {
       color: black;
       border: 1px solid black;
+      background-color: var(--red);
     }
     &:focus,
     &:active {
-      background-color: var(--red);
     }
     &:after {
       display: none !important;

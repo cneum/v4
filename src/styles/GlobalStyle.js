@@ -20,6 +20,8 @@ const GlobalStyle = createGlobalStyle`
     --green-tint: rgba(100, 255, 218, 0.1);
     --pink: #de5285;
     --red: #f93700;
+    --greige: #dbd5c9;
+    --dark-greige: #B2A58C;
 
     --font-sans: 'Calibre', 'San Francisco', 'SF Pro Text', -apple-system, system-ui, sans-serif;
     --font-mono: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
@@ -70,11 +72,14 @@ const GlobalStyle = createGlobalStyle`
   }
 
   ::selection {
-    background-color: black;
-    color: black;
+    background-color: inherit;
+    color: inherit;
   }
+  :focus {
+  }
+
   .progress {
-    background-color: none;
+    background-color: var(--dark-greige);
     height: var(--height);
     overflow: hidden;
     padding: calc(1px * var(--inset));
@@ -82,7 +87,7 @@ const GlobalStyle = createGlobalStyle`
     position:fixed;
   }
   .bar {
-    background-color: var(--thumb);
+    background-color: var(--red);
     height: 100%;
     transform-origin: 0 0;
     transform: scaleY(var(--progress));
@@ -92,13 +97,6 @@ const GlobalStyle = createGlobalStyle`
   :focus {
 
   }
-  .bar {
-    background-color: var(--thumb);
-    height: 100%;
-    transform-origin: 0 0;
-    transform: scaleY(var(--progress));
-    width: 100%;
-  }  
 
   body {
 
@@ -459,6 +457,11 @@ g
 
   .gatsby-image-outer-wrapper {
     height: 100%;
+  }
+  .footer {
+    a {
+      font-family: times new roman;
+    }
   }
 
   ${TransitionStyles};

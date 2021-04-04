@@ -1,7 +1,7 @@
 ---
 date: 'YYYY-MM-DD'
 title: 'Position Title'
-company: 'Company 6'
+company: 'Company 1'
 location: 'New York, NY'
 range: 'Start - Present'
 url: ''

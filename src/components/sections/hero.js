@@ -58,7 +58,7 @@ const Hero = () => {
   const four = (
     <p>
       I'm a science enthusiast and serial tinkerer navigating life as if it were a pas de deux.
-      based in New York, NY.
+      Based in NYC.
     </p>
   );
   const five = (

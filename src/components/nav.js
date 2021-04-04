@@ -102,14 +102,19 @@ const StyledLinks = styled.div`
       font-size: var(--fz-xs);
 
       a {
+        ${({ theme }) => theme.mixins.inlineLink};
         padding: 10px;
 
         &:before {
           content: '0' counter(item) '.';
-          margin-right: 5px;
-          color: black;
-          font-size: var(--fz-xxs);
+          margin-right: 2px;
+          color: var(--red);
+          font-weight: 800;
+          font-size: var(--fz-lg);
           text-align: right;
+        }
+        &:after {
+          bottom: 0.1em;
         }
       }
     }
@@ -119,6 +124,21 @@ const StyledLinks = styled.div`
     ${({ theme }) => theme.mixins.smallButton};
     margin-left: 15px;
     font-size: var(--fz-xs);
+    background-color: var(--dark-greige);
+    border: 0px;
+    color: var(--greige);
+    &:hover {
+      background-color: black;
+      color: var(--greige);
+      border: 0px;
+    }
+    &:focus {
+    }
+    &:active {
+    }
+    &:after {
+      display: none !important;
+    }
   }
 `;
 
@@ -193,7 +213,7 @@ const Nav = ({ isHome }) => {
                     href="/resume.pdf"
                     target="_blank"
                     rel="noopener noreferrer">
-                    Resume
+                    RESUME
                   </a>
                 </div>
               </CSSTransition>
